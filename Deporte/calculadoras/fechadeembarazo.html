@@ -1,0 +1,699 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <head>
+  <!--Etiquetas META-->
+  <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+  <meta http-equiv="resource-type" content="document">
+  <meta http-equiv="distribution" content="global">  
+  <meta name="robots" content="all">
+  <meta name="rating" content="general">  
+  <meta name="author" content="Leonardo Caballero,  (leonardo_caballero@email.com)">
+  <meta name="creator" content="Leonardo Caballero,  (leonardo_caballero@email.com)">
+  <meta name="copyright" content="Colegio Universitario Dr. Rafael Belloso Chac&iacute;n, Todos los Derechos Reservados &copy; Estado Zulia, Maracaibo, Venezuela - 1998, 2003">
+  <meta name="owner" content="Colegio Universitario Dr. Rafael Belloso Chacín, (webmater@cunibe.org)">
+  <meta name="organization" content="Dr. Rafael Belloso Chac&iacute;n">
+  <meta name="subject" content="Colegio Universitario Dr. Rafael Belloso Chacín, CUNIBE">
+  <meta name="keywords" content="CUNIBE, Tecnologicos, Administraci&oacute;n de Empresas, Mercadeo, Contadur&iacute;a, Dise&ntilde;o Gr&aacute;fico, Electr&oacute;nica, Inform&aacute;tica, Mantenimiento Industrial, Preescolar, Relaciones Industriales, Turismo, Dr. Oscar Belloso Medina, La Instituci&oacute;n, Rese&ntilde;a Hist&oacute;rica, Objetivos Institucionales, Misi&oacute;n, Visi&oacute;n, Estructura Organizativa, Perfil de Ingreso, Perfil Profesional, Pensun de Estudio, Proceso de Admisi&oacute;n, Requisitos de Ingreso, Inscripci&oacute;n, Formas de Pago, Banos Autorizados, Laboratorio de Computaci&oacute;n, Laboratorio de Electr&oacute;nica y F&iacute;sica, Tecnolog&iacute;a Educativa, Servicios M&eacute;dicos, Coordinaci&oacute;n de Cultura, Coordinaci&oacute;n de Deportes, Servicio de Internet, TELENOTAS, Campus, Fotos, Galeria de imagenes, Biblioteca, Vistas 360&deg;, Vistas 360 grados, Ubicaci&oacute;n, Consultas Acad&eacute;micas, Corte de Notas, Indice Acad&eacute;mico, Horarios de Clases, PAI, PAN, Perio, Periodo Acad&eacute;mico Normal, Periodo Acad&eacute;mico Intensivo, Eventos, EXPOCUNIBE, Estudios, Contactanos, Tecnol&oacute;gicos, Universidad, T&eacute;cnico Superior Universitario, T&eacute;cnico, Universitario, Dr. Rafael Belloso Chac&iacute;n, Colegio Universitario, Dr. Rafael Belloso Chac&iacute;n, www.cunibe.org, www.cunibe.org/bibio, www.cunibe.org/expocunibe, biblio, Bibliotecas, Consultas, Venezuela, Computaci&oacute;n, Internet, On line, en linea, Investigaci&oacute;n">  
+  <meta name="description" content="CUNIBE, nuestro inter&eacute;s primordial se dirige a la formaci&oacute;n de T&eacute;cnicos Superiores Universitarios; impartiendo a los estudiantes una s&oacute;lida preparaci&oacute;n altamente profesional y de definida significaci&oacute;n universitaria. A fin de lograr profesionales que garanticen el desarrollo pleno de las potencialidades socioecon&oacute;micas nacionales.">
+  <!--Icono del CUNIBE-->
+  <link rel="shortcut icon" href="../favicon.ico"> 
+  <!--Hoja de Estilos para todo el documento-->
+  <link rel="stylesheet" href="../style/style.css" type="text/css">
+  <!--Hoja de Estilos para la barra de scroll del browser-->
+  <style type="text/css"> 
+    <!-- 
+     body 
+     { 
+       scrollbar-face-color: #3184BD;
+       scrollbar-shadow-color: #689cd0;
+       scrollbar-highlight-color: #F1F2F4;
+       scrollbar-3dlight-color: #000000; 
+       scrollbar-darkshadow-color: #000000;
+       scrollbar-track-color: #84B5D6;
+       scrollbar-arrow-color: #ffffff
+      }
+    -->
+   </style>
+   <!--Libreria Script del Software Softkink DHTML Menu-->
+   <script type="text/javascript" language="JavaScript1.2" src="../imagenes/stm31.js"></script>
+   <!--Libreria Script Funciones Globales-->
+   <script type="text/javascript" language="JavaScript1.2" src="../js/fGlobalDeporte.js"></script>
+   <!--Funciones JavaScript-->   
+   <script type="text/javascript" language="JavaScript1.2">
+   <!--
+     /*
+      Auto Maximize Window Script- By Nick Lowe (nicklowe@ukonline.co.uk)
+      For full source code, 100's more free DHTML scripts, and Terms Of Use
+      Visit http://www.dynamicdrive.com
+     */
+
+     top.window.moveTo(0,0);
+     if (document.all)
+     {
+      top.window.resizeTo(screen.availWidth,screen.availHeight);
+     }
+     else if (document.layers||document.getElementById)
+     {
+      if (top.window.outerHeight < screen.availHeight || top.window.outerWidth < screen.availWidth)
+      {
+       top.window.outerHeight = screen.availHeight;
+       top.window.outerWidth = screen.availWidth;
+      }
+     }
+   //-->
+   </script>
+		<script language="JavaScript" type="text/javascript">
+<!--
+//Comprueba si la entrada en las cajas de texto contienen
+   //   solo números o el punto decimal.
+   function SonNumeros( valor_1 ){
+            if ( valor_1 == "" )
+               return false;
+            var punto = true
+            for (var i = 0; i < valor_1.length; i++){
+                var ch = valor_1.substring(i, i+1)
+                if (( ch < "0" || ch > "9" )){
+                   if ( ch != "."){
+                      return false;
+                   }
+                   else{
+                   
+                   }
+                }
+            }
+            return true;
+   }
+
+   //Comprueba que los datos introducidos sean validos y estén
+   //   dentro del rango fisiológico, y calcula el IMC. 
+   function IndMasCor(peso_1,talla_1){
+            //Comprueba si se introdujo un número, y si no es asi
+            //   lo indica y borra la caja correspondiente.
+            if(!SonNumeros(peso_1.value)){
+               var mensaje="El dato de PESO introducido NO es numérico.\n\n"+
+                           "Solo se admiten < , > o < . > o dígitos."
+               alert(mensaje);
+               //Borra el valor incorrecto de peso y el IMC.
+               peso_1.value="";
+               peso_1.focus();
+               return "";
+            }
+            //Convierte el dato de la caja a numérico real.
+            var pe=parseFloat(peso_1.value,10);
+            if(isNaN(pe) || (pe < 45 || pe > 150)){
+               mensaje = "¡ Pusiste un peso incorrecto !\n\n"+
+                         "El peso debe ser un valor numérico\n"+
+                         "comprendido entre 45 y 150 kg.";
+               alert(mensaje);
+               //Devuelve como valor de peso los rangos extremos.
+               var pes_dev; 
+               if ( isNaN(pe) ){
+                  pes_dev = "";
+               }
+               else{
+                  pes_dev = 45;
+                  if ( pe > 150 )
+                     pes_dev = 150;
+               } 
+               peso_1.value = pes_dev;
+               peso_1.focus();
+               return "";
+            }
+            if(!SonNumeros(talla_1.value)){
+               var mensaje="El dato de TALLA introducido NO es numérico.\n\n"+
+                           "Solo se admiten < , > o < . > o dígitos."
+               alert(mensaje);
+               talla_1.value="";
+               talla_1.focus();
+               return "";
+            }
+            var ta=parseFloat(talla_1.value,10);
+            if(isNaN(ta) || ( ta < 1 || ta > 2)){
+               var mensaje = "¡ Altura incorrecta !\n\n"+
+                             "La altura debe ser un valor numérico\n"+
+                             "comprendido entre 1.000 y 2.000 m.";
+               alert(mensaje);
+               var tall_dev; 
+               if ( isNaN(pe) ){
+                  tall_dev = "";
+               }
+               else{
+                  tall_dev = 1.000;
+                  if ( pe > 150 )
+                     tall_dev = 2.000;
+               } 
+               talla_1.value = tall_dev;
+               talla_1.value="";
+               talla_1.focus();
+               return "";
+            }
+            return Math.round((pe/(ta*ta))*10)/10;
+   }
+
+   //Decide que diagnóstico mostrar en función del valor del IMC. 
+   function DiagIMC (imc_1){
+            if ( imc_1 == ""){
+                return "";
+            }
+            else{
+                if ( imc_1 < 18 ){
+                   return "Delgadez preocupante.\n"+
+                          "En estas situaciones crece el riesgo de\n"+
+                          "pedecer patologias  digestivas-\n"+
+                          " y transtornos del comportamiento\n"+
+                          "alimentario como anorexia y/o bulimia.";
+                } 
+                if ( imc_1 < 20 ){
+                   return "Delgadez no recomendable.\n"+
+                          "Poco peso para su altura. Debe\n"+
+                          "incrementarse un poco el peso hasta\n"+
+                          "sobrepasar in IMC de 20."; 
+                }
+                if ( imc_1 < 25 ){
+                   return "Relación ideal de peso y talla.\n"+
+                          "Este valor del índice se corresponde con\n"+
+                          "la menor tasa de morbi- mortalidad."; 
+                }
+                if ( imc_1 < 30 ){
+                   return "Comienzo del sobrepeso.\n"+
+                          "Debe cuidar no alcanzar un valor de 30\n"+
+                          "en el índice de masa corporal IMC y re-\n"+
+                          "ducirlo hasta 25 si fuera posible, ba-\n"+
+                          "jando un poco de peso.";
+                }   
+                if ( imc_1 < 35 ){
+                   return "Obesidad.\n"+
+                          "Se ha de reducir peso para reducir los\n"+
+                          "riesgos de patologias asociadas como hi-\n"+
+                          "pertensión, diabetes, aterosclerosis,...";  
+                }
+                if ( imc_1 == 35 || imc_1 > 35 ){
+                   return "Obesidad severa.\n"+
+                          "Un IMC tan elevado está siempre asociado\n"+
+                          "con transtornos muy graves de los siste-\n"+
+                          "mas cardiovascular, endocrino, etc...\n"+
+                          "Debe reducir peso urgentemente.";
+                }
+            }
+   }
+
+   //Calcula el peso para un IMC determinado (talla fija).
+   function CalPeso (imc_1, talla_1){
+            return Math.round((imc_1*talla_1*talla_1)*10)/10;
+   }
+
+function MM_displayStatusMsg(msgStr) { //v1.0
+  status=msgStr;
+  document.MM_returnValue = true;
+}
+//-->
+</script>
+		<title>Colegio Universitario Dr. Rafael Belloso Chac&iacute;n - Coordinaci&oacute;n de Deporte</title>
+	</head>
+
+	<body background="../imagenes/background.gif" bgcolor="#ffffff" link="blue">
+		<table border="0" cellspacing="2" cellpadding="0" align="center" width="64">
+			<tr>
+				<td>
+					<div align="center">
+						<script type="text/javascript" language="JavaScript1.2">
+                                          <!--
+                                                                                      /*
+                                             Script de Insercion de Código HTML de Banner o Cabecera de Página
+                                             Realizado por Leonardo Caballero (leonardo_caballero@email.com)
+                                             el 15/03/2004
+                                           */
+                                           flag ="1"
+                                           imgBanner(flag)
+                                         
+ //-->
+                                       </script>
+						<br>
+						<a name="arriba"></a>
+						<table width="684" border="0" cellspacing="2" cellpadding="0" align="center">
+							<tr>
+								<td></td>
+								<td align="center" valign="middle">
+									<div align="center">
+										<script type="text/javascript" language="JavaScript1.2">
+<!--
+stm_bm(["btnDeporte",400,"../imagenes/","blank.gif",0,"","",1,0,250,0,1000,1,0,0]);
+stm_bp("p0",[0,4,0,0,2,2,0,7,100,"progid:DXImageTransform.Microsoft.Fade(overlap=.5,enabled=0,Duration=0.20)",-2,"",-2,90,2,5,"#3184bd","#84b5d6","",3,1,1,"#999999"]);
+stm_ai("p0i0",[6,1,"#ffffff","barravertical.gif",4,21,0]);
+stm_aix("p0i1","p0i0",[]);
+stm_aix("p0i2","p0i0",[]);
+stm_ai("p0i3",[0," Inicio","","",-1,-1,0,"../index.html","_self","Página Principal","Página Principal","","",0,0,0,"","",0,0,0,1,1,"#84b5d6",0,"#3184bd",0,"","",3,3,1,1,"#84b5d6","#666666","#333333","#ffffff","bold 9pt Tahoma","bold 9pt Tahoma",0,0]);
+stm_aix("p0i4","p0i0",[]);
+stm_aix("p0i5","p0i3",[0," La Coordinación","","",-1,-1,0,"","_self"," La Coordinación"," La Coordinación","","",0,0,0,"arrow_r.gif","arrow_r.gif",7,7]);
+stm_bp("p1",[1,4,-2,0,3,1,0,7,91,"progid:DXImageTransform.Microsoft.Fade(overlap=.5,enabled=0,Duration=0.20)",-2,"",-2,90,2,3,"#ffffff","#84b5d6","",3,1,1,"#84b5d6"]);
+stm_aix("p1i0","p0i3",[0,"Información General","","",-1,-1,0,"","_self","Información General","Información General","","",0,0,0,"arrow_r.gif","arrow_r.gif",7,7,0,0,1,"#84b5d6",0,"#3184bd",0,"","",3,3,1,1,"#84b5d6","#666666","#000000","#ffffff","9pt Tahoma"]);
+stm_bpx("p2","p1",[1,2,-2,0,3,1,0,0]);
+stm_aix("p2i0","p1i0",[0,"Misión","","",-1,-1,0,"../informaciongeneral.html#mision","_self","Misión","Misión","","",0,0,0,"","",0,0]);
+stm_aix("p2i1","p2i0",[0,"Visión","","",-1,-1,0,"../informaciongeneral.html#vision","_self","Visión","Visión"]);
+stm_aix("p2i2","p2i0",[0,"Objetivo General","","",-1,-1,0,"../informaciongeneral.html#objetivogeneral","_self","Objetivo General","Objetivo General"]);
+stm_ep();
+stm_aix("p1i1","p2i0",[0,"Normativas","","",-1,-1,0,"../normativas.html","_self","Normativas","Normativas"]);
+stm_aix("p1i2","p2i0",[0,"Funciones","","",-1,-1,0,"../funciones.html","_self","Funciones","Funciones"]);
+stm_aix("p1i3","p1i0",[0,"Estructura","","",-1,-1,0,"","_self","Estructura","Estructura"]);
+stm_bpx("p3","p2",[]);
+stm_aix("p3i0","p2i0",[0,"Instalaciones Deportivas","","",-1,-1,0,"../instalaciones.html","_self","Instalaciones Deportivas","Instalaciones Deportivas"]);
+stm_ep();
+stm_aix("p1i4","p2i0",[0,"Horario de Atención","","",-1,-1,0,"../horario.html","_self","Horario de Atención","Horario de Atención"]);
+stm_ep();
+stm_aix("p0i6","p0i0",[]);
+stm_aix("p0i7","p0i3",[0," Servicios","","",-1,-1,0,"","_self","Servicios","Servicios","","",0,0,0,"arrow_r.gif","arrow_r.gif",7,7,0,1,1,"#84b5d6",0,"#3285bc"]);
+stm_bpx("p4","p1",[]);
+stm_aix("p4i0","p1i0",[0,"Entrenamientos","","",-1,-1,0,"","_self","Entrenamientos","Entrenamientos"]);
+stm_bpx("p5","p2",[]);
+stm_aix("p5i0","p2i0",[0,"Baloncesto","","",-1,-1,0,"../baloncesto.html","_self","Baloncesto","Baloncesto"]);
+stm_aix("p5i1","p2i0",[0,"Futbol de Salón","","",-1,-1,0,"../futbol.html","_self","Futbol de Salón","Futbol de Salón"]);
+stm_aix("p5i2","p2i0",[0,"Tennis de Mesa","","",-1,-1,0,"../tennisdemesa.html","_self","Tennis de Mesa","Tennis de Mesa"]);
+stm_aix("p5i3","p2i0",[0,"Karate-Do","","",-1,-1,0,"../karatedo.html","_self","Karate-Do","Karate-Do"]);
+stm_aix("p5i4","p2i0",[0,"Voleibol","","",-1,-1,0,"../voleibol.html","_self","Voleibol","Voleibol"]);
+stm_aix("p5i5","p2i0",[0,"Softball","","",-1,-1,0,"../softball.html","_self","Softball","Softball"]);
+stm_ep();
+stm_aix("p4i1","p1i0",[0,"Calculadora","","",-1,-1,0,"../calculadora.html","_self","Calculadora","Calculadora","","",0,0,0,"","",0,0,0,0,1,"#84b5d6",0,"#3285bc"]);
+stm_aix("p4i2","p4i1",[0,"Enlaces","","",-1,-1,0,"../enlaces.html","_self","Enlaces","Enlaces"]);
+stm_ep();
+stm_aix("p0i8","p0i0",[]);
+stm_aix("p0i9","p0i3",[0," Eventos","","",-1,-1,0,"","_self","Eventos","Eventos","","",0,0,0,"arrow_r.gif","arrow_r.gif",7,7,0,1,1,"#84b5d6",0,"#3287bc"]);
+stm_bpx("p6","p2",[1,4]);
+stm_aix("p6i0","p2i0",[0,"EXPOECOLOGÍA","","",-1,-1,0,"../expoecologia.html","_self","EXPOECOLOGÍA","EXPOECOLOGÍA"]);
+stm_aix("p6i1","p2i0",[0,"GRUPEXCU","","",-1,-1,0,"../grupexcu.html","_self","GRUPEXCU","GRUPEXCU"]);
+stm_aix("p6i2","p2i0",[0,"Murales Ecológicos ","","",-1,-1,0,"../murales.html","_self","Murales Ecológicos ","Murales Ecológicos "]);
+stm_ep();
+stm_aix("p0i10","p0i0",[]);
+stm_aix("p0i11","p0i9",[0,"Mapa del Sitio","","",-1,-1,0,"../mapadelsitio.html","_self","Mapa del Sitio","Mapa del Sitio","","",0,0,0,"","",0,0]);
+stm_aix("p0i12","p0i3",[0,"          Coordinación de Deporte","","",-1,-1,0,"","_self","Coordinación de Deporte","Coordinación de Deporte","","",0,0,0,"","",0,0,0,1,1,"#84b5d6",0,"#84b5d6",0,"","",3,3,1,1,"#84b5d6","#84b5d6","#000000","#ffffff","bold 8pt Tahoma","bold 8pt Tahoma"]);
+stm_aix("p0i13","p0i0",[]);
+stm_aix("p0i14","p0i0",[]);
+stm_aix("p0i15","p0i0",[]);
+stm_ep();
+stm_em();
+//-->
+</script>
+									</div>
+								</td>
+								<td></td>
+							</tr>
+						</table>
+						<br>
+						<table border="0" cellpadding="1" cellspacing="0" align="center" bgcolor="#3184bd">
+							<tr>
+								<td width="420">
+									<table align="center" bgcolor="#3184BD" border="0" cellpadding="6" cellspacing="3" width="679">
+										<tbody>
+											<tr height="669">
+												<td bgcolor="#FFFFFF" class="blurbs" height="669">
+													<table border="0" cellpadding="10" cellspacing="0" width="663" align="center" bgcolor="#a38a8a">
+														<tr>
+															<td width="25%" bgcolor="white" align="left" valign="top">
+																<div align="center">
+																	<script type="text/javascript" language="JavaScript1.2">
+                                          <!--
+                                                                                      /*
+                                             Script de Insercion de Código HTML de Logo de Menu Lateral
+                                             Realizado por Leonardo Caballero (leonardo_caballero@email.com)
+                                             el 15/03/2004
+                                           */
+                                           flag ="1"
+                                           logoMenuLateral (flag)
+                                         
+ //-->
+                                       </script>
+																	<script type="text/javascript" language="JavaScript1.2">
+                                          <!--
+                                                                                      /*
+                                             Script de Insercion de Código HTML de Menu Lateral
+                                             Realizado por Leonardo Caballero (leonardo_caballero@email.com)
+                                             el 15/03/2004
+                                           */
+                                           flag ="1"
+                                           menuLateral (flag)
+                                         
+ //-->
+                                       </script>
+																	<script type="text/javascript" language="JavaScript1.2">
+                                                                                                                  <!--
+                                                                                                                   /*
+                                                                                                                    Script de Insercion de Código HTML de Tabla de Contactos
+                                                                                                                    Realizado por Leonardo Caballero (leonardo_caballero@email.com)
+                                                                                                                   */
+                                                                                                                    tablaDeContactos()
+                                                                                                                  
+ //-->
+                                                                                                                </script>
+																</div>
+															</td>
+															<td bgcolor="white" width="75%" align="left" valign="top"><font face="Tahoma,Arial"><b>  </b></font>
+																<div align="center">
+																	<u><br>
+																		<b><font color="#000000" face="tahoma,arial" size="2">CALCULE SU FECHA DE EMBARAZO</font></b></u><br>
+																	<br>
+																	<br>
+																</div>
+																<div align="justify">
+																	<font color="#000000" face="tahoma,arial" size="2">&nbsp;&nbsp;&nbsp;Ingresando los datos correspondientes en el siguiente cuadro, usted podr&aacute; estimar la fecha de embarazo.</font><br>
+																	<br>
+																	<div align="center">
+																		<div align="center">
+																			<script type="text/javascript" language=JavaScript>
+function click() {
+if (event.button==2||event.button==3) {
+alert('nutricionsaludable.com Todos los Derechos Reservados.')
+}
+}
+document.onmousedown=click
+</script>
+																			<script language=JavaScript type="text/javascript">
+// general purpose function to see if an input value has been entered at all
+function isEmpty(inputStr) {
+        if (inputStr == "" || inputStr == null) {
+                return true
+        }
+        return false
+}
+// general purpose function to see if a suspected numeric input
+// is a positive integer
+function isNumber(inputStr) {
+        for (var i = 0; i < inputStr.length; i++) {
+                var oneChar = inputStr.charAt(i)
+                if (oneChar < "0" || oneChar > "9") {
+                        return false
+                }
+        }
+        return true
+}
+// function to determine if value is in acceptable range for this application
+function inRangeDay(inputStr) {
+        num = parseInt(inputStr)
+        if (num < 1 || num > 31) {
+                return false
+        }
+        return true
+}
+// function to determine if value is in acceptable range for this application
+function inRangeYear(inputStr) {
+        num = parseInt(inputStr)
+        if (num < 1900 || num > 3000) {
+                return false
+        }
+        return true
+}
+// Master value validator routine for day
+function isValidDay(inputStr) {
+        if (isEmpty(inputStr)) {
+                alert("Please enter the number of the day into the day field before clicking the Calculate button.")
+                return false
+        } else {
+                if (!isNumber(inputStr)) {
+                        alert("Please make sure the day is a number only.")
+                        return false
+                } else {
+                        if (!inRangeDay(inputStr)) {
+                                alert("Please enter a valid day.")
+                                return false
+                        }
+                }
+        }
+        return true
+}
+// Master value validator routine for year
+function isValidYear(inputStr) {
+        if (isEmpty(inputStr)) {
+                alert("Please enter the year into the year field before clicking the Calculate button.")
+                return false
+        } else {
+                if (!isNumber(inputStr)) {
+                        alert("Please make sure the year is a number only.")
+                        return false
+                } else {
+                        if (!inRangeYear(inputStr)) {
+                                alert("Please enter a valid year.")
+                                return false
+                        }
+                }
+        }
+        return true
+}
+function makeArray(n) {
+        this.length = n
+        for (var i=1; i <= n; i++)
+                this[i] = null
+                return this
+}
+var maxday = new makeArray(12)
+maxday[1] = 31
+maxday[2] = 28
+maxday[3] = 31
+maxday[4] = 30
+maxday[5] = 31
+maxday[6] = 30
+maxday[7] = 31
+maxday[8] = 31
+maxday[9] = 30
+maxday[10] = 31
+maxday[11] = 30
+maxday[12] = 31
+var monthname = new makeArray(12)
+monthname[1] = "Enero"
+monthname[2] = "Febrero"
+monthname[3] = "Marzo"
+monthname[4] = "Abril"
+monthname[5] = "Mayo"
+monthname[6] = "Junio"
+monthname[7] = "Julio"
+monthname[8] = "Agosto"
+monthname[9] = "Septiembre"
+monthname[10] = "Octubre"
+monthname[11] = "Noviembre"
+monthname[12] = "Diciembre"
+var adddays = new makeArray(7)
+adddays[1] = 14
+adddays[2] = 35
+adddays[3] = 70
+adddays[4] = 84
+adddays[5] = 161
+adddays[6] = 189
+adddays[7] = 280
+// Calculate the date string
+function calcNewDate(month,day,year,adddays) {
+
+        newday = eval(day) + adddays
+
+        newmonth = month + 1
+
+        newyear = eval(year)
+ 
+         var max
+
+        for (var i = 0; i < 12; i++) {
+
+          if (newmonth == 2 && (newyear % 4) == 0) {
+	          max = 29
+
+          } else
+
+            max = maxday[newmonth]
+          if (newday > max) {
+            newday = newday - max
+
+           newmonth = newmonth + 1
+
+            if (newmonth > 12) {
+
+              newyear = newyear + 1
+
+              newmonth = 1
+
+            }
+
+          }
+
+         else
+
+            break
+
+        }
+
+        var datestring = monthname[newmonth] + " " + newday + ", " + newyear
+
+        return datestring
+
+}
+// Get the date entered and calculate the rest of the dates
+
+function calc(form) {
+
+        day = form.day.value
+
+        year = form.year.value
+
+        monthnum = form.month.selectedIndex
+   	
+   	 if (isValidDay(day)) {
+
+          if (isValidYear(year)){
+
+            form.conception.value = calcNewDate(monthnum,day,year,adddays[1])
+
+            form.beginrisk.value = calcNewDate(monthnum,day,year,adddays[2])
+
+            form.endrisk.value = calcNewDate(monthnum,day,year,adddays[3])
+ 
+            form.beginorgan.value = calcNewDate(monthnum,day,year,adddays[2])
+ 
+            form.endorgan.value = calcNewDate(monthnum,day,year,adddays[3])
+
+            form.endfirst.value = calcNewDate(monthnum,day,year,adddays[4])
+
+            form.preemies.value = calcNewDate(monthnum,day,year,adddays[5])
+
+            form.endsecond.value = calcNewDate(monthnum,day,year,adddays[6])
+
+            form.duedate.value = calcNewDate(monthnum,day,year,adddays[7])
+          }
+        } 
+}
+
+</script>
+																			<!-- pregnant pregnancy obstetrics fetus infant baby chickenpox croup constipation food allergies earache otitis media parvovirus infection lice vaccines immunizations circumcision heart murmur nosebleeds airbags fever safety toys parenting parents babies childhood kids pediatrics teens adolescents teenagers adolescence -->
+																			<form action="#" name="dates">
+																				<div align="center">
+																					<table bgcolor="#FFFFFF" border="0" cellpadding="5" cellspacing="0" width=453>
+																							<tr bgcolor="#3184bd" height="95">
+																								<td colspan=3 height=95 valign="top">
+																									<div align="center">
+																										<table border="0" cellpadding="5" cellspacing="0" width="381">
+																											<tbody>
+																												<tr>
+																													<td align="right" rowspan=3>
+																														<div align="center">
+																															<b><font color="#FFFFFF" face="tahoma,arial" size="2">Escriba el &uacute;ltimo d&iacute;a de<br>
+																																&nbsp;su periodo menstrual</font></b>
+																														</div>
+																													</td>
+																													<td align="right" colspan="2" bgcolor="#84b5d6">
+																														<b><font color="#FFFFFF" face="tahoma,arial" size="2">Mes:</font> </b>
+																													</td>
+																													<td bgcolor="#84b5d6">
+																														<b><font color="#FFFFFF" face="tahoma,arial" size="2">
+																															<select name="month">
+																																		<option selected>Enero</option>
+																																		<option>Febrero</option>
+																																		<option>Marzo</option>
+																																		<option>Abril</option>
+																																		<option>Mayo</option>
+																																		<option>Junio</option>
+																																		<option>Julio</option>
+																																		<option>Agosto</option>
+																																		<option>Septiembre</option>
+																																		<option>Octubre</option>
+																																		<option>Noviembre</option>
+																																		<option>Diciembre</option>
+																																	</select> 
+																														</font></b>
+																													</td>
+																												</tr>
+																												<tr>
+																													<td align="left">
+																														<b><font color="#FFFFFF" face="tahoma,arial" size="2">D&iacute;a:</font></b>
+																													</td>
+																													<td align="left"><input name=day size=2 type="text"></td>
+																													<td>
+																														<b><font color="#FFFFFF" face="tahoma,arial" size="2">A&ntilde;o: <input name=year size=4 type="text"> </font></b>
+																													</td>
+																												</tr>
+																												<tr>
+																													<td align="center" colspan=3 bgcolor="#84b5d6">
+																														<div align="center">
+																															<table width="122" border="0" cellspacing="0" cellpadding="5" align="center">
+																																<tr>
+																																	<td align="center" valign="middle"><input name="button" onclick="calc(this.form)" type="button" value="Calcular"></td>
+																																	<td align="center" valign="middle"><input name="borrar" onclick="calc(this.form)" type="reset" value="Borrar"></td>
+																																</tr>
+																															</table>
+																														</div>
+																													</td>
+																												</tr>
+																											</tbody>
+																										</table>
+																									</div>
+																								</td>
+																							</tr>
+																							<tr bgcolor="#3184bd">
+																								<td align="right" colspan="2" valign="top" bgcolor="#84b5d6">
+																									<b><font color="#FFFFFF" face="tahoma,arial" size="2">LA CONCEPCION PROBABLEMENTE OCURRIO ALREDEDOR:</font></b><br>
+																										<b><font color="#FFFFFF" face="tahoma,arial" size="1">(Aproximadamente dos semanas despu&eacute;s de su &uacute;ltimo periodo menstrual)</font></b></td>
+																								<td align="center" valign="middle" bgcolor="#84b5d6" width="34%"><font color="#00cccc" face="Verdana"><input name=conception size="18"> </font></td>
+																							</tr>
+																						<tr bgcolor="#3184bd">
+																								<td align="right" colspan="2" valign="top">
+																									<b><font color="#FFFFFF" face="tahoma,arial" size="2">&nbsp;El periodo de mayor riesgos para&nbsp;<br>defectos del nacimiento:</font></b><br>
+																									<b><font color="#FFFFFF" face="tahoma,arial" size="1">Cinco a diez semanas de gestaci&oacute;n<br>	&nbsp;(el n&uacute;mero de semanas desde su &uacute;ltimo periodo menstrual)</font></b></td>
+																							<td align="center" valign="middle" width="34%">
+																								<input name="beginrisk" size="18"><br><b><font color="#FFFFFF" face="tahoma,arial" size="2">a</font></b><br><input name="endrisk" size="18">
+																							</td>
+																						</tr>
+																							<tr bgcolor="#3184bd">
+																								<td align="right" valign="bottom" bgcolor="#84b5d6" width="37%"><b><font color="#FFFFFF" face="tahoma,arial" size="2">&nbsp;5 semanas de embarazo:</font></b></td>
+																								<td align="center" colspan="2" valign="bottom" bgcolor="#84b5d6"><input name="beginorgan" size="18"></td>
+																							</tr>
+																							<tr bgcolor="#3184bd">
+																								<td align="right" valign="bottom" width="37%"><b><font color="#FFFFFF" face="tahoma,arial" size="2">10 semanas de embarazo:</font></b></td>
+																								<td align="center" colspan="2" valign="bottom"><input name="endorgan" size="18"></td>
+																							</tr>
+																							<tr bgcolor="#3184bd">
+																								<td align="right" valign="bottom" bgcolor="#84b5d6" width="37%"><b><font color="#FFFFFF" face="tahoma,arial" size="2">11-14 semanas de embarazo:</font></b></td>
+																								<td align="center" colspan="2" valign="bottom" bgcolor="#84b5d6"><input name="endfirst" size="18"></td>
+																							</tr>
+																							<tr bgcolor="#3184bd">
+																								<td align="right" valign="bottom" width="37%"><b><font color="#FFFFFF" face="tahoma,arial" size="2">23 semanas de embarazo: </font></b></td>
+																								<td align="center" colspan="2" valign="bottom"><input name="preemies" size="18"></td>
+																							</tr>
+																							<tr bgcolor="#3184bd">
+																								<td align="right" valign="bottom" bgcolor="#84b5d6" width="37%"><b><font color="#FFFFFF" face="tahoma,arial" size="2">&nbsp;27 semanas de embarazo: </font></b></td>
+																								<td align="center" colspan="2" valign="bottom" bgcolor="#84b5d6"><input name="endsecond" size="18"></td>
+																							</tr>
+																							<tr bgcolor="#3184bd">
+																								<td align="right" valign="bottom" width="37%"><b><font color="#FFFFFF" face="tahoma,arial" size="2">&nbsp;40 semanas de embarazo: </font></b></td>
+																								<td align="center" colspan="2" valign="bottom"><input name="duedate" size="18"></td>
+																							</tr>
+																					</table>
+																				</div>
+																			</form>
+																		</div>
+																		<p><br>
+																		</p>
+																	</div>
+																</div>
+																<div align="right">
+																	<font face="Tahoma,Arial" size="-1"><a title="Volver al Sub Menu de Calculadoras" href="../calculadora.html" target="_self"><img src="../imagenes/atras.gif" alt="" height="7" width="7" border="0"></a></font> <a href="../calculadora.html" title="Volver al Sub Menu de Calculadoras" target="_self" onmouseover="window.status='Volver al Sub Menu de Calculadoras'; return true;"><font size="2">Atras</font></a> | <a href="#arriba" title="Volver al Tope" target="_self" onmouseover="window.status='Volver al Tope'; return true;"><font size="2">Arriba</font></a> <a href="#arriba" title="Volver al Tope" target="_self"><img height=7 src="../imagenes/arriba.gif" width=7 border="0" alt="Volver al Tope"></a><font size="-1" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><br>
+																	</font></div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<br>
+						<script type="text/javascript" language="JavaScript1.2">
+                                          <!--
+                                           /*
+                                             Script de Insercion de Código HTML de Pie de Página
+                                             Realizado por Leonardo Caballero (leonardo_caballero@email.com)
+                                           */
+                                           pieDePagina()
+                                          //-->
+                                       </script>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</body>
+
+</html>
